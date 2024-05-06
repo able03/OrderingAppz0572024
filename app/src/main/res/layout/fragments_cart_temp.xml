@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvCart"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_empty"
+        android:layout_centerInParent="true"
+        android:id="@+id/ivCartEmpty"
+        android:visibility="invisible"
+        android:alpha="0.3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:alpha="0.6"
+        android:layout_marginTop="-30dp"
+        android:text="EMPTY"
+        android:visibility="invisible"
+        android:id="@+id/tvCartEmpty"
+        android:layout_below="@id/ivCartEmpty"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:cornerRadius="5dp"
+        android:id="@+id/btnCheckout"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>
